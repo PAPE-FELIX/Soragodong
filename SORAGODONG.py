@@ -1,5 +1,6 @@
 import discord
 import random
+import os
 
 soragodong = ['a', 'b', 'c', 'd', 'e']
 client = discord.Client()
@@ -57,5 +58,5 @@ async def on_message(message):
 
 
 
-
-client.run("NjU0NjIxOTcwMDI1MDIxNDQx.XfIhpQ.FndnmdjtZbLG3nqTZBluqUxAdiQ")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
