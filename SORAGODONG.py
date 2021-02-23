@@ -27,7 +27,7 @@ class MyClient(discord.Client):
 
         if message.content.startswith('소라'):
 
-            randomNum = random.randrange(1, 3)  # 1~6까지 랜덤수
+            randomNum = random.randrange(1, 6)  # 1~6까지 랜덤수
             print(randomNum)
             if randomNum == 1:
                 await message.reply('안돼', mention_author=True)
@@ -35,18 +35,18 @@ class MyClient(discord.Client):
                 await message.reply('그래', mention_author=True)
             if randomNum == 3:
                 await message.reply('굶어', mention_author=True)
-            if randomNum == 3:
+            if randomNum == 4:
                 await message.reply('응', mention_author=True)
-            if randomNum == 3:
+            if randomNum == 5:
                 await message.reply('기다려', mention_author=True)
-            if randomNum == 3:
+            if randomNum == 6:
                 await message.reply('다시 한번 물어봐', mention_author=True)
 
 
 
         if message.content.startswith('마법'):
 
-            randomNum = random.randrange(1, 3)
+            randomNum = random.randrange(1, 6)
             print(randomNum)
             if randomNum == 1:
                 await message.reply('안돼', mention_author=True)
@@ -54,11 +54,11 @@ class MyClient(discord.Client):
                 await message.reply('그럼', mention_author=True)
             if randomNum == 3:
                 await message.reply('굶어', mention_author=True)
-            if randomNum == 3:
+            if randomNum == 4:
                 await message.reply('어, 그래', mention_author=True)
-            if randomNum == 3:
+            if randomNum == 5:
                 await message.reply('기다려', mention_author=True)
-            if randomNum == 3:
+            if randomNum == 6:
                 await message.reply('다시 한번 물어봐', mention_author=True)
 
 client = MyClient()
